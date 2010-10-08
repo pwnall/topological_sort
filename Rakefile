@@ -13,8 +13,8 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "new"
-  gem.summary = %Q{Topological sort in arbitrary directed graphs.}
-  gem.description = %Q{Generic implementation of DFS for topological sorting. }
+  gem.summary = %Q{Topological sorting in arbitrary directed graphs.}
+  gem.description = %Q{Generic implementation of DFS for topological sorting.}
   gem.email = "victor@costan.us"
   gem.homepage = "http://github.com/pwnall/new"
   gem.authors = ["Victor Costan"]
