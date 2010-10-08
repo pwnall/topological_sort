@@ -13,9 +13,9 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "new"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "costan@gmail.com"
+  gem.summary = %Q{Topological sort in arbitrary directed graphs.}
+  gem.description = %Q{Generic implementation of DFS for topological sorting. }
+  gem.email = "victor@costan.us"
   gem.homepage = "http://github.com/pwnall/new"
   gem.authors = ["Victor Costan"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
