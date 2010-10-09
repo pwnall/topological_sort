@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{topological_sort}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Victor Costan"]
@@ -27,10 +27,10 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/topological_sort.rb",
-    "new.gemspec",
     "spec/.rspec",
     "spec/spec_helper.rb",
-    "spec/topological_sort_spec.rb"
+    "spec/topological_sort_spec.rb",
+    "topological_sort.gemspec"
   ]
   s.homepage = %q{http://github.com/pwnall/new}
   s.require_paths = ["lib"]
