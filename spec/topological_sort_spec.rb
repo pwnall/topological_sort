@@ -36,4 +36,30 @@ describe 'topological_sort' do
       result.should == [5, 6, 7, 2, 8, 3, 9, 4, 1]
     end
   end
+
+  describe 'on a hairy graph with a cycle' do
+    before do
+      @graph = {1 => [2, 3, 4], 2 => [5, 6, 7], 3 => [6, 7, 8], 4 => [7, 8, 9],
+                8 => [11, 4]}
+    end
+    
+    it 'raises an exception' do
+      lambda {
+        topological_sort([1]) { |node| { :next => @graph[node] } }
+      }.should raise_error(ArgumentError)
+    end
+  end
+
+  describe 'on a hairy graph with a self-reference' do
+    before do
+      @graph = {1 => [2, 3, 4], 2 => [5, 6, 7], 3 => [6, 7, 8], 4 => [7, 8, 9],
+                8 => [11, 8]}
+    end
+    
+    it 'raises an exception' do
+      lambda {
+        topological_sort([1]) { |node| { :next => @graph[node] } }
+      }.should raise_error(ArgumentError)
+    end
+  end
 end
