@@ -1,6 +1,9 @@
-= new
+= topological_sort
 
-Description goes here.
+This library implements topological sorting using the depth-first search (DFS)
+graph traversal algorithm.
+
+See the specs for usage.
 
 == Note on Patches/Pull Requests
  
