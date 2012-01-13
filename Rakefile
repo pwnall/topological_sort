@@ -18,14 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.email = "victor@costan.us"
   gem.homepage = "http://github.com/pwnall/new"
   gem.authors = ["Victor Costan"]
-  # Include your dependencies below. Runtime dependencies are required when using your gem,
-  # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
-  #  spec.add_runtime_dependency 'jabber4r', '> 0.1'
-  #  spec.add_development_dependency 'rspec', '> 1.2.3'
-  gem.add_development_dependency "rspec", ">= 2.0.0.beta.19"
-  gem.add_development_dependency "bundler", "~> 1.0.0"
-  gem.add_development_dependency "jeweler", "~> 1.5.0.pre3"
-  gem.add_development_dependency "rcov", ">= 0"
+  # Dependencies in Gemfile.
 end
 Jeweler::RubygemsDotOrgTasks.new
 
@@ -42,7 +35,7 @@ end
 
 task :default => :spec
 
-require 'rake/rdoctask'
+require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
